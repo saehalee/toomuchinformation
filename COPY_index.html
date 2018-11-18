@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang=ko>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet"
+		href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<title>Web Image Classification</title>
+</head>
+<body>
+
+<table class="table-bordered table-hover">
+	<div class = "image">
+		<img src = "nike.jpg" />
+	</div>
+	<tr>
+		<td><h2>상품검색이 가능합니다.</h2></td>
+	</tr>
+	<tr>
+		<td><h2>언제든지 검색하세요.</h2>/</td>
+	</tr>
+	<tr>
+		<td><h3>검색하고자 하는 상품의 이미지를 첨부하세요.</h3></td>
+	</tr>
+	<tr>
+		<td>
+			<form action="/upload" id="form" name="imageform" method="POST" enctype="multipart/form-data">
+				<div class="form-group">
+					<label for="uploadFile">이미지를 촬영하세요.</label>
+					<input type="file" id="uploadFile" name="uploadFile" capture="camera" accept="image/*" class="btn btn-default btn-lg">
+					<p class="help-block">추론 이미지 선택</p>
+					<input type="submit" class="btn"> <!btn-success>
+					<input type="submit" class="btn"> <!btn-success>
+					<input type="submit" class="btn"> <!btn_sucees>
+		
+				</div>
+			</form>
+		</td>
+	</tr>
+</table>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+</script>
+</body>
+</html>

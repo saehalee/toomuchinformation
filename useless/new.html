@@ -1,0 +1,133 @@
+<table width="100%" style="text-align:center; border:none">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+
+		<div>
+		<style>
+		width:100%;
+		height:100%;
+		border:1px solid green;
+		background-image: url('nike.jpg');
+		background-repeat:no-repeat;
+		background-size:cover;
+		</style>
+		</div>
+  </head>
+  <script>
+function changeIframeUrl(url){
+    document.getElementById("main_frame").src = url;
+}
+  </script>
+
+<body>
+    <tr>
+        <td colspan="3" style="background-color:lightgrey"><p>PNP Project</p>
+		<div style="position:relative;font-size:400%;color:#5E4E96;text-align:center;font-family: 'Bree Serif', serif;top:30px;">
+
+	</div>
+	<div style="botton:100px;position:relative;font-size:250%;color:#5C59F7;text-align:center;font-family: 'Bree Serif', serif;">
+		<p>
+			Too Much Information
+		</p>
+	</div>
+
+	</td>
+
+
+    </tr>
+
+    <tr>
+        <td style="background-color:#C28CE3; color:white; width:20%"><h2>Image Search</h2>
+		<form action="/upload" id="form" name="imageform" method="POST" enctype="multipart/form-data">
+				<div calss="from-group">
+					<label for="uploadFile">Take a Photo <p> </label>
+					<input type="file" id="uploadFile" name="uploadFile" capture="camera" accept="image/*" class="btn btn-default btn-lg" >
+					<input type="submit" class="btn" value="Google Search" style="width:100%; font-family:굴림; background-color:#C28CE3; border:1 solid #A0DBE4"> <!btn-success>
+				</div>
+			</form>
+			<form action="/upload1" id="form" name="imageform" method="POST" enctype="multipart/form-data">
+				<div calss="from-group">
+					<label for="uploadFile">Take a Photo <p> </label>
+					<input type="file" id="uploadFile" name="uploadFile" capture="camera" accept="image/*" class="btn btn-default btn-lg">
+					<input type="submit" class="btn" value="Insta Search" style="width:100%; font-family:굴림; background-color:#C28CE3; border:1 solid #A0DBE4" > <!btn-success>
+				</div>
+			</form>
+			<form action="/upload2" id="form" name="imageform" method="POST" enctype="multipart/form-data">
+				<div calss="from-group">
+					<label for="uploadFile">Take a Photo <p> </label>
+					<input type="file" id="uploadFile" name="uploadFile" capture="camera" accept="image/*" class="btn btn-default btn-lg">
+					<input type="submit" class="btn" value="Musinsa Search" style="width:100%; font-family:굴림; background-color:#C28CE3; border:1 solid #A0DBE4" > <!btn-success>
+				</div>
+			</form>
+
+			<form action="/upload3" id="form" name="imageform" method="POST" enctype="multipart/form-data">
+				<div calss="from-group">
+					<label for="uploadFile">Take a Photo <p> </label>
+					<input type="file" id="uploadFile" name="uploadFile" capture="camera" accept="image/*" class="btn btn-default btn-lg">
+					<input type="submit" class="btn" value="Musinsa Review Search" style="width:100%; font-family:굴림; background-color:#C28CE3; border:1 solid #A0DBE4"> <!btn-success>
+				</div>
+			</form>
+
+			<form action="/upload4" id="form" name="imageform" method="POST" enctype="multipart/form-data">
+				<div calss="from-group">
+					<label for="uploadFile">Take a Photo <p></label>
+					<input type="file" id="uploadFile" name="uploadFile" capture="camera" accept="image/*" class="btn btn-default btn-lg">
+					<input type="submit" class="btn" value="Naver Search" style="width:100%; font-family:굴림; background-color:#C28CE3; border:1 solid #A0DBE4"> <!btn-success>
+				</div>
+			</form>
+
+			<form action="/map" id="form" name="imageform" method="POST" enctype="multipart/form-data">
+				<div calss="from-group">
+					<label for="uploadFile">Take a Photo <p> </label>
+					<input type="file" id="uploadFile" name="uploadFile" capture="camera" accept="image/*" class="btn btn-default btn-lg">
+					<input type="submit" class="btn" value="Around Shop Search" style="width:100%; font-family:굴림; background-color:#C28CE3; border:1 solid #A0DBE4"> <!btn-success>
+				</div>
+			</form>
+
+			<form action="/camera" id="form" name="imageform" method="POST" enctype="multipart/form-data">
+				<div calss="from-group">
+					<p class="help-block">동영상촬영
+					<input type="submit" class="btn"
+					<p class="help-block">상품검색
+					<input type="submit" class="btn1">
+				</div>
+			</form>
+	</td>
+	<td style="background-color:#C28CE3; vertical-align:top; color:white; padding:0; width:20%"><h2>Viedo Search</h2>
+	<body>
+		<!iframe src="https://store.musinsa.com/app/" width="100%" height="500px" border="0" name="target_frame"></iframe>
+		<iframe width="" height="" verticle-align= "bottom" src="https://www.youtube.com/embed/KsmDKiC4dok" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</body>
+	</td>
+    <td style="height:200px; text-align:center"> <p>Shop Search</p>
+		<!iframe src="https://store.musinsa.com/app/" width="1800px" height="500px" border="0" name="target_frame"></iframe>
+    <input type="button" value='위치 찾기'  onclick = "changeIframeUrl('fword.php')"></input>
+		<iframe  width="280" height="210" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="" name="main_frame" id="main_frame"></iframe>
+    <form action="/camera" id="form" name="imageform" method="POST" enctype="multipart/form-data">
+				<div calss="from-group">
+					<p class="help-block">동영상촬영
+					<input type="submit" class="btn">
+					<p class="help-block">상품검색
+					<input type="submit" class="btn1">
+				</div>
+			</form>
+	</td>
+
+    </tr>
+
+    <tr>
+
+        <td colspan="3" style="background-color:#FFCC00"><h2> Print Coupon </h2>
+
+	</td>
+
+    </tr>
+
+	<tr>
+
+
+
+    </tr>
+
+</body>

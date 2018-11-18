@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang=ko>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet"
+		href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+	<title>Web Image Classification</title>
+	<style>
+		up{
+			bottom:5000px;
+			right:500px;
+			position:absolute;
+		}
+		right{ right:50px;}
+		right0{ right:100px;}
+		size_down{
+			width:0px;
+			opacity = 0;
+			position:absolute;
+		}	
+		size_up{
+			width:100px;
+			position:absolute;
+		}
+		left5{left:220px;font-family: 'Bree Serif', serif;position:absolute;bottom:19px;}
+		left4{left:20px;font-family: 'Bree Serif', serif;position:absolute;bottom:19px;}
+		left{left:92px;position:absolute;}
+		left2{left:500px;top:730px;position:absolute;}
+		left3{left:500px;  top:760px;position:absolute;}
+		left6{left:50px;}>
+	</style>
+
+</head>
+<body>
+
+<table class="table-bordered table-hover">
+	<tr>
+		<td><h3>검색하고자 하는 상품의 이미지를 첨부하세요.</h3></td>
+	</tr>
+	<tr>
+	<!div style="position:relative;font-size:400%;color:#5E4E96;text-align:center;font-family: 'Bree Serif', serif;top:30px;">
+		<p>
+			Too Much Information
+		</p>
+	</div>
+	<!div style="botton:100px;position:relative;font-size:250%;color:#5C59F7;text-align:center;font-family: 'Bree Serif', serif;">
+		<p>
+			Hufs_PnP
+		</p>
+	</div>
+
+		<!div style="position:relative;font-size:250%;color:#5E4E96;text-align:center;font-family: 'Bree Serif', serif;top:30px;">
+			<form action="/index" id="form" name="imageform" method="POST" enctype="multipart/form-data">
+				<div calss="from-group">
+					<label for="uploadFile">이미지를 촬영하세요.</label>
+					<input type="file" id="uploadFile" name="uploadFile" capture="camera" accept="image/*" class="btn btn-default btn-lg">
+					<p class="help-block">기존 가중치 구글 이미지 검색</p>
+					<input type="submit" class="btn"> <!btn-success>
+				</div>
+			</form>
+			<form action="/upload" id="form" name="imageform" method="POST" enctype="multipart/form-data">
+				<div calss="from-group">
+					<label for="uploadFile">이미지를 촬영하세요.</label>
+					<input type="file" id="uploadFile" name="uploadFile" capture="camera" accept="image/*" class="btn btn-default btn-lg">
+					<p class="help-block">구글 이미지 검색</p>
+					<input type="submit" class="btn"> <!btn-success>
+				</div>
+			</form>
+			<form action="/upload1" id="form" name="imageform" method="POST" enctype="multipart/form-data">
+				<div calss="from-group">
+					<label for="uploadFile">이미지를 촬영하세요.</label>
+					<input type="file" id="uploadFile" name="uploadFile" capture="camera" accept="image/*" class="btn btn-default btn-lg">
+					<p class="help-block">인스타 검색</p>
+					<input type="submit" class="btn"> <!btn-success>
+				</div>
+			</form>			
+			<form action="/upload2" id="form" name="imageform" method="POST" enctype="multipart/form-data">
+				<div calss="from-group">
+					<label for="uploadFile">이미지를 촬영하세요.</label>
+					<input type="file" id="uploadFile" name="uploadFile" capture="camera" accept="image/*" class="btn btn-default btn-lg">
+					<p class="help-block">무신사 검색</p>
+					<input type="submit" class="btn"> <!btn-success>
+				</div>
+			</form>
+
+			<form action="/upload3" id="form" name="imageform" method="POST" enctype="multipart/form-data">
+				<div calss="from-group">
+					<label for="uploadFile">이미지를 촬영하세요.</label>
+					<input type="file" id="uploadFile" name="uploadFile" capture="camera" accept="image/*" class="btn btn-default btn-lg">
+					<p class="help-block">무신사 후기 검색</p>
+					<input type="submit" class="btn"> <!btn-success>
+				</div>
+			</form>
+
+			<form action="/upload4" id="form" name="imageform" method="POST" enctype="multipart/form-data">
+				<div calss="from-group">
+					<label for="uploadFile">이미지를 촬영하세요.</label>
+					<input type="file" id="uploadFile" name="uploadFile" capture="camera" accept="image/*" class="btn btn-default btn-lg">
+					<p class="help-block">네이버 최저가 검색</p>
+					<input type="submit" class="btn"> <!btn-success>
+				</div>
+			</form>
+
+			<form action="/map" id="form" name="imageform" method="POST" enctype="multipart/form-data">
+				<div calss="from-group">
+					<label for="uploadFile">이미지를 촬영하세요.</label>
+					<input type="file" id="uploadFile" name="uploadFile" capture="camera" accept="image/*" class="btn btn-default btn-lg">
+					<p class="help-block">주변 매장 검색</p>
+					<input type="submit" class="btn"> <!btn-success>
+				</div>
+			</form>
+	
+			<form action="/camera" id="form" name="imageform" method="POST" enctype="multipart/form-data">
+				<div calss="from-group">
+					<p class="help-block">동영상촬영 
+					<input type="submit" class="btn"
+					<p class="help-block">상품검색 
+					<input type="submit" class="btn1">
+				</div>
+			</form>
+			<form action="/camera_inside" id="form" name="imageform" method="GET" enctype="multipart/form-data">
+				<div calss="from-group">
+					<p class="help-block">카메라작동
+					<input type="submit" class="btn">
+				</div>
+			</form>
+		</div>	
+	</tr>
+</table>
+<!--
+<table class="table-bordered table-hover2">
+        <div class = "image">
+                <img src = "nike.jpg" />
+        </div>
+        <tr>
+                <td><h2>상품검색이 가능합니다.</h2></td>
+        </tr>
+        <tr>
+                <td><h2>언제든지 검색하세요.</h2>/</td>
+        </tr>
+        <tr>
+                <td><h3>검색하고자 하는 상품의 이미지를 첨부하세요.</h3></td>
+        </tr>
+        <tr>
+                <td>
+                        <form action="/upload" id="form" name="imageform" method="POST" enctype="multipart/form-data">
+                                <div class="form-group">
+                                        <label for="uploadFile">이미지를 촬영하세요.</label>
+                                        <input type="file" id="uploadFile" name="uploadFile" capture="camera" accept="image/*" class="btn btn-default btn-lg">
+                                        <p class="help-block">추론 이미지 선택</p>
+                                        <input type="submit" class="btn"> <!btn-success>
+                                        <input type="submit" class="btn"> <!btn-success>
+                                        <input type="submit" class="btn"> <!btn_sucees>
+
+                                </div>
+                        </form>
+                </td>
+        </tr>
+</table>
+-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+</script>
+</body>
+</html>
